@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contests",
+  "info": {
+    "name": "contest",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "sourceLink": {
+      "type": "string",
+      "required": true
+    },
+    "isVerified": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "interestCount": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "keywords": {
+      "type": "text",
+      "required": true
+    },
+    "company": {
+      "model": "company"
+    },
+    "prizeCategories": {
+      "collection": "prize-category"
+    },
+    "viewCount": {
+      "type": "integer",
+      "default": 0,
+      "required": true
+    }
+  }
+}

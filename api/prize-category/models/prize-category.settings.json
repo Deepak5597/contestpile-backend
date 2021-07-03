@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prize_category",
+  "info": {
+    "name": "prize_category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_interests",
+  "info": {
+    "name": "user_interest"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "contest": {
+      "model": "contest"
+    },
+    "notificationEnabled": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
